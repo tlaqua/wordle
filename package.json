@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "build-cloudflare": "CI=false PUBLIC_URL=/ NODE_OPTIONS=--openssl-legacy-provider npm build",
+    "build-cloudflare": "CI=false PUBLIC_URL=/ NODE_OPTIONS=--openssl-legacy-provider npm run build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
