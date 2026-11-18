@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "build-cloudflare": "CI=false PUBLIC_URL=/ NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
@@ -20,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/MikhaD/wordle/issues"
   },
-  "homepage": "https://github.com/MikhaD/wordle#readme",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",
